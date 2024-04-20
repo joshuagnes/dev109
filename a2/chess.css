@@ -1,7 +1,9 @@
 body {
-    background-image: url("http://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2017/09/08/20/29/chess-2730034_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     place-items: center;
-    overflow-x:hidden ;
+    overflow-x: hidden ;
 }
 
 #title {
@@ -21,21 +23,21 @@ body {
 }
 
 img {
-    margin-left: 5px;
+    margin-left: 20px;
     margin-top: 10px;
 }
 
 #container {
     display: grid;
-    margin-top: 20%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5%;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
 }
 
 .row {
     position: relative;
-    margin-left: 10%;
+    margin-left: 15%;
     margin-right: 10%;
 }
 
