@@ -58,6 +58,7 @@ li {
     background-size: cover;
     background-position: center 80%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .article {
