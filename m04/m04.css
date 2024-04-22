@@ -1,0 +1,90 @@
+* {
+    font-family: Arial, Verdana, sans-serif;
+    color: #f5f5fb;
+    text-align: center;
+}
+
+h1{
+    font-family: "Tac One", sans-serif;
+    font-size: 50px;
+}
+
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsQiM04Q3dWc5nlZvNH4tIQRnou8tTzknlo6ZaJRwUrm_JxwJxknkLnHKWl9GO1x5sNLA&usqp=CAU);
+}
+
+#content {
+    overflow: auto;
+}
+
+#nav,
+#feature,
+#footer {
+    margin: 1%;
+}
+
+.column1,
+.column2,
+.column3 {
+    width: 31.3%;
+    float: left;
+    margin: 1%;
+}
+
+.column3 {
+    margin-right: 0%;
+}
+
+li {
+    display: inline;
+    padding: 0.5em;
+}
+
+#nav,
+#footer {
+    background-color: #c6ba75;
+    padding: 0.5em 0;
+}
+
+#feature {
+    height: 10em;
+    padding-top: 1px;
+    margin-bottom: 1em;
+    background-color: #d69973;
+    background-image: url('https://www.oneroadatatime.com/wp-content/uploads/2013/03/Star-Wars-Lego-Characters-HD-Wallpaper.jpg');
+    background-size: cover;
+    background-position: center 80%;
+    background-repeat: no-repeat;
+}
+
+.article {
+    height: 10em;
+    margin-bottom: 1em;
+    background-color: #aae1b2;
+
+}
+
+.column1 {
+    height: 10em;
+    margin-bottom: 1em;
+    background-color: #769bc4;
+}
+
+.column2 {
+    height: 10em;
+    margin-bottom: 1em;
+    background-color: #d28cda;
+}
+
+.column3 {
+    height: 10em;
+    margin-bottom: 1em;
+    background-color: #70c9cf;
+}
+
+#nav {
+    background-color: coral;
+}
