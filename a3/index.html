@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Week 6 - BC - Rhombus">
+    <meta charset="utf-8">
+    <title>Shu Yu Wang</title>
+    <style>
+        .flex-container {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <label>What is the size of Rhombus?</label><br>
+    <input type="text" id="rHeight" value="5" size="5">
+    <br>
+    <label>Choose color for Even position</label><br>
+    <select id="colorEven">
+        <option value="#B200ED">Violet</option>
+        <option value="#98FB98">Mint</option>
+        <option value="#5C62D6">Indigo</option>
+    </select><br>
+
+    <label>Choose color for Odd position</label><br>
+    <select id="colorOdd">
+        <option value="#AF69EE">Orchid</option>
+        <option value="#622A0F">Cinnamon</option>
+        <option value="#C64B8C">Mulberry</option>
+    </select>
+    <br>
+    <label>Choose symbol for Rhombus</label>
+    <select id="symbol">
+        <option value="*">*</option>
+        <option value="$">$</option>
+        <option value="+">+</option>
+    </select>
+    <br>
+    <button onclick="createRhombus(document.getElementById('rHeight').value,
+    document.getElementById('colorEven').value,
+    document.getElementById('colorOdd').value,
+    document.getElementById('symbol').value);">Display Rhombus</button>
+    <div class="flex-container">
+        <div id="upLeft">Rhombus</div>
+        <div id="upRight"></div>
+    </div>
+    <div class="flex-container">
+        <div id="downLeft"></div>
+        <div id="downRight"></div>
+    </div>
+
+    <script src="/a3.js"></script>
+
+
+</body>
+
+</html>
