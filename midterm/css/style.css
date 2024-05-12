@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: tomato;
+  color:tomato;
 }
 
 #wrap {
@@ -206,4 +206,28 @@ a:hover {
 
 .clear {
   clear: both;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.column {
+  flex: 1;
+  padding: 10px;
+}
+.header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.screenshot {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.screenshot img {
+  max-width: 100%;
+  height: auto;
 }
