@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f2f2f2;
+    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,55 +10,42 @@ body {
 }
 
 form {
-    background: #ffffff;
+    background-color: #ffffff;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
-}
-
-fieldset {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-legend {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px;
+    width: 600px;
 }
 
 input[type="text"],
 input[type="password"],
-textarea,
-select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+select,
+textarea {
+    width: 50%;
+    padding: 4px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 input[type="submit"] {
-    background: #4CAF50;
-    color: white;
+    width: 100%;
+    padding: 10px;
     border: none;
-    padding: 10px 15px;
-    cursor: pointer;
     border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
 input[type="submit"]:hover {
-    background: #45a049;
+    background-color: #45a049;
 }
 
 .error {
     color: red;
-    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 5px;
 }
-
