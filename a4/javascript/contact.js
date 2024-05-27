@@ -1,10 +1,8 @@
-
-// script.js
 function validateForm() {
     let valid = true;
     let errorMessages = "";
 
-    // Clear previous error messages
+
     document.querySelectorAll('.error').forEach(e => e.innerHTML = "");
 
     // Validate First Name
@@ -32,7 +30,7 @@ function validateForm() {
 
     // Validate Phone
     let phone = document.getElementById("phone").value;
-    if (isNaN(phone) || phone.length > 15 || phone === "") {
+    if (!/^\d{3}-\d{3}-\d{4}$/.test(phone)) {
         document.getElementById("errorPhone").innerHTML = "Phone number is required and should be numerical (max 15 digits).";
         valid = false;
     }
@@ -79,14 +77,52 @@ function validateForm() {
         valid = false;
     }
 
-    // Validate Zip Code if Country is USA
-    if (country === "USA") {
-        let zipcode = document.getElementById("zipcode").value;
-        if (zipcode === "" || zipcode.length > 5 || isNaN(zipcode)) {
-            document.getElementById("errorZipcode").innerHTML = "Zip code is required and should be numerical (max 5 digits).";
-            valid = false;
-        }
+    // Validate Zip Code
+    let zipcode = document.getElementById("zipcode").value;
+    if (zipcode === "" || zipcode.length < 5 || isNaN(zipcode)) {
+        document.getElementById("errorZipcode").innerHTML = "Zip code is required and should be numerical (5 digits).";
+        valid = false;
     }
+
 
     return valid;
 }
+
+
+function formatPhoneNumber(phone) {
+    phone = phone.replace(/\D/g, "");
+    if (phone.length === 10) {
+        return phone.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3");
+    }
+    return phone;
+}
+
+
+document.getElementById("phone").addEventListener("input", function () {
+    this.value = formatPhoneNumber(this.value);
+});
+
+
+document.getElementById("zipcode").addEventListener("input", function () {
+    if (this.value.length > 5) {
+        this.value = this.value.slice(0, 5);
+    }
+});
+
+document.getElementById("phone").addEventListener("input", function () {
+    if (this.value.length > 15) {
+        this.value = this.value.slice(0, 15);
+    }
+});
+
+document.getElementById("password").addEventListener("input", function () {
+    if (this.value.length > 7) {
+        this.value = this.value.slice(0, 7);
+    }
+});
+
+document.getElementById("username").addEventListener("input", function () {
+    if (this.value.length > 12) {
+        this.value = this.value.slice(0, 12);
+    }
+});
