@@ -1,11 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -19,7 +20,6 @@ body {
   position: relative;
 }
 
-
 .slideshow-container {
   position: relative;
   margin: auto;
@@ -27,7 +27,6 @@ body {
   width: 100%;
 }
 
-/* Style for slideshow image */
 #slideshow-img {
   max-width: 100%;
   display: block;
@@ -36,12 +35,10 @@ body {
   width: 100%;
 }
 
-
 .description {
   text-align: center;
   margin-top: 10px;
 }
-
 
 .prev, .next, .autoplay {
   position: absolute;
@@ -64,4 +61,14 @@ body {
 .autoplay {
   left: 50%;
   transform: translateX(-50%);
+}
+
+#footer {
+  margin-top: 20px;
+}
+
+#footer a {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
