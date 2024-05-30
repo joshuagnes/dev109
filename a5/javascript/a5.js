@@ -12,11 +12,11 @@ function showImg(e) {
   const img = document.getElementById("slideshow-img");
   const description = document.getElementById("description");
   const images = [
-    "/image1.jpg",
-    "/image2.jpg",
-    "/image3.jpg",
-    "/image4.jpg",
-    "/image5.jpg"
+    "images/image1.jpg",
+    "images/image2.jpg",
+    "images/image3.jpg",
+    "images/image4.jpg",
+    "images/image5.jpg"
   ];
   
   const imageDescriptions = [
