@@ -15,3 +15,4 @@ addEventListener("click", function (event) {
   dot.style.top = (event.pageY - 4) + "px";
   document.body.appendChild(dot);
 });
+
