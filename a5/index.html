@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider with Arrow Button</title>
+  <link rel="stylesheet" href="css/a5.css">
+</head>
+<body>
+  <div class="content">
+    <div class="slideshow-container">
+      <img id="slideshow-img">
+      <div class="description" id="description"></div>
+      <button class="prev" onclick="side_slide(-1)">Previous</button>
+      <button class="next" onclick="side_slide(1)">Next</button>
+      <button class="autoplay" onclick="toggleAutoplay()">Autoplay</button>
+    </div>
+  </div>
+  <script src="javascript/a5.js"></script>
+</body>
+</html>
