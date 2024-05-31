@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const listItem = Array.from(items).find(item => item.textContent === itemName);
     if (listItem && !listItem.style.textDecoration) {
       listItem.style.textDecoration = 'line-through';
-      listItem.style.color = 'green';
+      listItem.style.color = 'white';
       foundItemsCount++;
 
       if (foundItemsCount === items.length) {
