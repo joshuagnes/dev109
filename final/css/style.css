@@ -1,7 +1,17 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #e5e5e5;
+  color: #3f3f3f;
+  font-size: 16px;
+  line-height: 24px;
+} */
+
 * {
   font-family: "Roboto Slab", serif;
 }
-  
+
 body {
   width: 90%;
   margin: 0 auto;
@@ -9,11 +19,11 @@ body {
 }
 
 a {
-  color:blue;
+  color: blue;
 }
 
 a:hover {
-  color:tomato;
+  color: tomato;
 }
 
 #wrap {
@@ -66,7 +76,7 @@ a:hover {
   display: inline;
 }
 
-#header p{
+#header p {
   margin: 0;
   padding: 10px 0 0 30px;
   font-weight: bold;
@@ -154,6 +164,7 @@ a:hover {
   font-weight: normal;
 }
 
+
 .cleft {
   float: left;
   width: 280px;
@@ -207,20 +218,24 @@ a:hover {
   justify-content: space-between;
   margin: 20px;
 }
+
 .column {
   flex: 1;
   padding: 10px;
 }
+
 .header {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 .screenshot {
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 20px;
 }
+
 .screenshot img {
   max-width: 100%;
   height: auto;
