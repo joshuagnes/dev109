@@ -247,3 +247,37 @@ a:hover {
   max-width: 100%;
   height: auto;
 }
+
+@media (max-width: 768px) {
+  #wrap {
+    width: 100%;
+  }
+
+  #topmenu li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .cleft, .cright {
+    width: 100%;
+  }
+
+  #menu {
+    width: 100%;
+    margin: 0;
+  }
+
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
